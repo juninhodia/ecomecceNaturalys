@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url(styles/header.css);
+@import url(styles/carousel.css);
+@import url(styles/categoriasLogo.css);
+@import url(styles/produtos.css);
+
+:root {
+    --font-principal:'Open Sans', sans-serif;
+    --font-secundaria:'Raleway', sans-serif;
+    --font-tamanho-padrao-texto:14px;
+
+    --background:#fafafa;
+    --cor--principal: #499a09;
+
+
+    --texto-primario:hsl(210, 11%, 15%);
+    --texto-secundario:hsl(210, 9%, 31%, 1);
+    --texto-terceario:hsl(0, 0%, 47%);
+
+}
+
+
+body {
+    background-color: var(--background);
+    font-family: var(--font-principal);
+    font-size: var(--font-tamanho-padrao-texto) ;
+}

@@ -1,0 +1,19 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+#perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
