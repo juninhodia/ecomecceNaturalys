@@ -15,28 +15,17 @@
 <body>
     <header>
         <input type="search" id="search" placeholder="Buscar produtos...">
-        <img src="imagem_perfil.jpg" alt="Perfil" id="perfil">
+        <div id="cart">
+            <lord-icon
+            src="https://cdn.lordicon.com/slkvcfos.json"
+            trigger="hover"
+            colors="primary:#499a09,secondary:#499a09"
+            style="width:37px;height:37px">
+        </lord-icon>
+            <span id="cart-count">0</span>
+        </div>
     </header>
-    
-    <section class="carousel">
-      
-            <div class="carousel-images">
-                <img src="img/Apresentação de Negócios Plano de Projeto 3D Azul Branco.png" alt="Imagem 1">
-                <img src="img/Apresentação de Negócios Plano de Projeto 3D Azul Branco (1).png" alt="Imagem 2">
-                <img src="path/to/image3.jpg" alt="Imagem 3">
-            </div>
-            <button class="carousel-button prev">❮</button>
-            <button class="carousel-button next">❯</button>
 
-    </section>
-    
-    <section id="categorias">
-        <button class="btn-categorias"> <img src="img/assets/Geral.svg" alt="Geral" class="img-categoria"> Marcas</button>
-        <button class="btn-categorias"> <img src="img/assets/Suplemento.svg" alt="Suplemento" class="img-categoria">Suplementos</button>
-        <button class="btn-categorias"> <img src="img/assets/Encapsulado.svg" alt="Encapsulado" class="img-categoria"> Encapsulados</button>
-        <button class="btn-categorias"> <img src="img/assets/Agranel.svg" alt=" Agranel" class="img-categoria"> Agranel</button>
-    </section>
-    
     <section id="logos_marcas">
         <!-- Inserir logos das marcas aqui -->
         <ul class="logos__marcas__principais">
@@ -71,6 +60,27 @@
       
         <!-- ... -->
     </section>
+    
+    <section class="carousel">
+      
+            <div class="carousel-images">
+                <img src="img/Apresentação de Negócios Plano de Projeto 3D Azul Branco.png" alt="Imagem 1">
+                <img src="img/Apresentação de Negócios Plano de Projeto 3D Azul Branco (1).png" alt="Imagem 2">
+                <img src="path/to/image3.jpg" alt="Imagem 3">
+            </div>
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
+
+    </section>
+    
+    <section id="categorias">
+        <button class="btn-categorias"> <img src="img/assets/Geral.svg" alt="Geral" class="img-categoria"> Marcas</button>
+        <button class="btn-categorias"> <img src="img/assets/Suplemento.svg" alt="Suplemento" class="img-categoria">Suplementos</button>
+        <button class="btn-categorias"> <img src="img/assets/Encapsulado.svg" alt="Encapsulado" class="img-categoria"> Encapsulados</button>
+        <button class="btn-categorias"> <img src="img/assets/Agranel.svg" alt=" Agranel" class="img-categoria"> Agranel</button>
+    </section>
+    
+    
 
     <section id="produtos">
         <!-- Exemplo de produto -->
@@ -150,5 +160,6 @@
     </section>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </body>
 </html>

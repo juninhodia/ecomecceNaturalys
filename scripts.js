@@ -35,7 +35,7 @@ function updateCarousel() {
     document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
 }
 
-// Contador para adicionar produto 
+// Contador para adicionar produto
 document.querySelectorAll('.counter').forEach(counterDiv => {
     const decrementBtn = counterDiv.querySelector('.decrement');
     const incrementBtn = counterDiv.querySelector('.increment');
@@ -55,5 +55,34 @@ document.querySelectorAll('.counter').forEach(counterDiv => {
     });
 });
 
+// Carrinho
+let cartCount = 0;
+const cartCounterElement = document.getElementById('cart-count');
+
+document.querySelectorAll('.counter').forEach(counterDiv => {
+    const decrementBtn = counterDiv.querySelector('.decrement');
+    const incrementBtn = counterDiv.querySelector('.increment');
+    const numberSpan = counterDiv.querySelector('.number');
+    let currentValue = 0;
+
+    decrementBtn.addEventListener('click', () => {
+        if (currentValue > 0) {
+            currentValue--;
+            numberSpan.textContent = currentValue;
+            updateCart(-1);
+        }
+    });
+
+    incrementBtn.addEventListener('click', () => {
+        currentValue++;
+        numberSpan.textContent = currentValue;
+        updateCart(1);
+    });
+});
+
+function updateCart(change) {
+    cartCount += change;
+    cartCounterElement.textContent = cartCount;
+}
 
 

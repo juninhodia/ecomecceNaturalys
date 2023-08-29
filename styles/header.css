@@ -17,3 +17,21 @@ header {
     height: 40px;
     border-radius: 50%;
 }
+
+#cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-count {
+    color: var(--cor--principal);
+    border-radius:50%;
+    font-size: 1.3rem;
+}
+
