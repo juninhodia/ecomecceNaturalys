@@ -16,48 +16,46 @@
     <header>
         <input type="search" id="search" placeholder="Buscar produtos...">
         <div id="cart">
-            <lord-icon
-            src="https://cdn.lordicon.com/slkvcfos.json"
-            trigger="hover"
-            colors="primary:#499a09,secondary:#499a09"
-            style="width:37px;height:37px">
-        </lord-icon>
-            <span id="cart-count">0</span>
+            <a href="cart.html" id="viewCart"><lord-icon
+                src="https://cdn.lordicon.com/slkvcfos.json"
+                trigger="hover"
+                colors="primary:#499a09,secondary:#499a09"
+                style="width:37px;height:37px">
+            </lord-icon>
+                <span id="cart-count">0</span></a>
+            
         </div>
     </header>
 
     <section id="logos_marcas">
         <!-- Inserir logos das marcas aqui -->
         <ul class="logos__marcas__principais">
-
             <li>
-                <a href="#" class="sliding-image" id="slidingImage">
+                <a href="#" class="sliding-image">
                     <img src="img/Max Titanium.svg" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
                 </a>
             </li>
+
             <li>
-                <a href="#" class="sliding-image" id="slidingImage">
-                    <img src="img/Flora Nativa do Brasil.svg" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
-                </a>
-            </li>
-            <li>
-                <a href="#" class="sliding-image" id="slidingImage">
+                <a href="#" class="sliding-image">
                     <img src="img/Vitafor.png" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
                 </a>
             </li>
+
             <li>
-                <a href="#" class="sliding-image" id="slidingImage">
+                <a href="#" class="sliding-image">
+                    <img src="img/Color ANdina.webp" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
+                </a>
+            </li>
+          
+
+            <li>
+                <a href="#" class="sliding-image">
                     <img src="img/Flora Nativa do Brasil.svg" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
                 </a>
             </li>
-
-            <li>
-                <a href="#" class="sliding-image" id="slidingImage">
-                    <img src="img/Max Titanium.svg" alt="Uma imagem deslizante" class="logo__marca__fornecedor">
-                </a>
-            </li>
+            <!-- ... (repetir para os outros itens) ... -->
         </ul>
-      
         <!-- ... -->
     </section>
     
@@ -84,14 +82,14 @@
 
     <section id="produtos">
         <!-- Exemplo de produto -->
-        <div class="produtos__da__empresa">
+        <ul class="produtos__da__empresa">
 
-            <div class="logo__da__empresa__dos__produtos">
-                <img src="img/Flora Nativa do Brasil.svg" alt="" class="logo__marca__fornecedor">
-            </div>
+            <li class="logo__da__empresa__dos__produtos">
+                <img src="img/Flora Nativa do Brasil.svg" alt="" class="logo__fornecedor">
+            </li>
 
 
-            <div class="produto">
+            <li class="produto">
 
                 <div class="produto__fornecedor">
                     <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
@@ -109,10 +107,9 @@
                         <button class="counter-btn increment">+</button>
                     </div>
                
+            </li>
 
-            </div>
-
-            <div class="produto">
+            <li class="produto">
 
                 <div class="produto__fornecedor">
                     <img src="img/TRI_PROPOLIS-398x702x0x51x398x600x1689626773.jpg" alt="Nome Produto 1" class="imagem__produto" >
@@ -130,10 +127,129 @@
                     <button class="counter-btn increment">+</button>
                 </div>
 
-            </div>
+            </li>
+
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
+
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
+
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
 
 
-          <div class="produto">
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
+
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
+
+            <li class="produto">
+
+                <div class="produto__fornecedor">
+                    <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
+                </div>
+
+                <div class="descricao__produto">
+                    <h2>OLEO DE CURCUMA 30ML</h2>
+                    <p>827398473648576</p>
+                    <span>R$100,00</span>
+                </div>
+        
+                    <div class="counter">
+                        <button class="counter-btn decrement">-</button>
+                        <span class="number">0</span>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+               
+            </li>
+          <li class="produto">
 
                 <div class="produto__fornecedor">
                     <img src="img/OLEO_CURCUMA_PIPETA_PRETA.webp" alt="Nome Produto 1" class="imagem__produto" >
@@ -152,7 +268,7 @@
                     <button class="counter-btn increment">+</button>
                 </div>
 
-            </div>
+            </li>
 
             
         

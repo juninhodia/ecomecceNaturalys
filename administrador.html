@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalys Atacado</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="admin-panel">
+        <h1>Administração de Produtos</h1>
+        <form id="productForm">
+            <div class="input-group">
+                <label for="image">Imagem do Produto:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="sku">SKU:</label>
+                <input type="text" id="sku" name="sku" placeholder="SKU do Produto" required>
+            </div>
+            <div class="input-group">
+                <label for="name">Nome do Produto:</label>
+                <input type="text" id="name" name="name" placeholder="Nome do Produto" required>
+            </div>
+            <div class="input-group">
+                <label for="price">Preço:</label>
+                <input type="number" id="price" name="value" placeholder="Preço do Produto" step="0.01" required>
+            </div>
+            <button id="enviar-bd" type="submit">Adicionar Produto</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</body>
+</html>

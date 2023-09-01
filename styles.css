@@ -3,13 +3,14 @@
 @import url(styles/carousel.css);
 @import url(styles/categoriasLogo.css);
 @import url(styles/produtos.css);
+@import url(styles/telaDoAdimin.css);
 
 :root {
     --font-principal:'Open Sans', sans-serif;
     --font-secundaria:'Raleway', sans-serif;
     --font-tamanho-padrao-texto:14px;
 
-    --background:#fafafa;
+    --background:#fff;
     --cor--principal: #499a09;
 
 

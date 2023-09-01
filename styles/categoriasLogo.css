@@ -29,23 +29,38 @@
 /* Categoria das logos */
 
 #logos_marcas {
+    display: flex;
+    align-items: center;
     margin-top: .3rem;
     width: 100%;
     height: 4rem;
+    overflow: hidden; /* Esconder o excesso da animação */
+    position: relative; /* Posição relativa para mover a lista dentro deste container */
 }
 
 .logos__marcas__principais {
     display: flex;
-    gap: .6rem;
+    gap: 1.2rem;
     align-items: center;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x:  scroll; /* Para evitar rolagem */
     overflow-y: hidden;
 }
+
 .logo__marca__fornecedor {
     width: 7rem;
-    
 }
+@keyframes slideLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
 
 /* fim Categoria das logos */
 
